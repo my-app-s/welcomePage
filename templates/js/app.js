@@ -1,7 +1,7 @@
 let myLinkToIn = document.getElementById("link--in");
 let myLinkToHh = document.getElementById("link--hh");
-let myButtonSkills = document.getElementById("button--skills");
-let myDivForSkills = document.getElementById("key--skills");
+// let myButtonSkills = document.getElementById("pressTitleSkill");
+let myDivForSkills = document.getElementById("getListSkills");
 let myDivAnimation = document.getElementById("div--animation");
 
 let listSkills = [
@@ -37,6 +37,7 @@ let listSkills = [
     "Vue",
     "Bootstrap"
 ];
+
 let statusSkills = false;
 
 function getElementSkill() {
@@ -85,7 +86,10 @@ myLinkToIn.addEventListener("click", function() {
 myLinkToHh.addEventListener("click", function() {
     document.location.href = "https://almaty.hh.kz/resume/26b31f66ff0919c1bf0039ed1f6d356f366e4e";
 });
-myButtonSkills.addEventListener("click", getElementSkill);
+
+// Get list skill
+// myButtonSkills.addEventListener("click", getElementSkill);
+getElementSkill();
 
 animationForMyPage(myDivAnimation);
 

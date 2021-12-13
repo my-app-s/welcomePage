@@ -1,9 +1,21 @@
 * {
+    font-family: Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+
+    background-color: white;
+    color: black;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
-
-    font-family: Arial, sans-serif;
-    font-size: 14px;
 }
 
 .class--global--loop {
@@ -16,32 +28,35 @@
 }
 
 .class--header {
+    margin: 0;
+    padding: 0;
     height: 100px;
 
     display: flex;
 }
 
-.class--header--one {
+.class--header--one, h1 {
     width: 20%;
+
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 1.2;
 }
 
-.class--header--two {
+.class--header--two, h4 {
     width: 100%;
 
+    font-size: 1.1em;
+    font-weight: normal;
     font-style: italic;
-    font-size: 10px !important;
     text-align: center;
-}
-
-.class--contante {
-    color: black;
 }
 
 .class--info {
     margin: 0 auto;
     padding: 10px;
 
-    width: 1100px;
+    width: 90%;
     height: 100px;
 
     display: flex;
@@ -53,9 +68,33 @@
     width: 20%;
 }
 
-.class--info-text {
+.class--info--text {
     width: 80%;
+
+    font-size: 1em;
 }
+
+/* content */
+.content--info {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+
+}
+
+.contante--title h1 {
+    width: 100%;
+}
+
+.contante--one {
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.class--skills {
+    padding: 10px 0;
+}
+/* /content */
 
 .class--footer {
     margin: 0;
@@ -73,6 +112,8 @@
 
     width: 20px;
     height: 20px;
+
+    cursor: pointer;
 }
 
 /* Animation */
