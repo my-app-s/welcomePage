@@ -4,114 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume page</title>
-    <!--myStyle-->
+    <title>Document</title>
+    <!--my css file-->
     <link rel="stylesheet" href="templates/css/style.css">
 </head>
 <body>
     
-    <div class="class--global--loop">
-        <header class="class--header">
-                <div class="class--header--one">
-                    <h1>Muratbekov Rustem</h1>
-                </div>
-                <div class="class--header--two">
-                    <h4>Junior programmer-developer</h4>
-                </div>
-        </header>
+    <div class="class--global">
+        <div class="class--welcome">
+            <h1>Hello, press button "Start" for game!</h1>
+            <button class="class--button" id="startButton">Start</button>
+        </div>
+
+        <div class="field--game" id="fieldGame"></div>
+
+        <div id="messageResult"></div>
 
         <div>
-
-            <div class="class--info">
-                <div class="class--animation" id="div--animation"></div>
-
-                <div class="class--info--text">
-                    <div><b>Высшее образование (Бакалавр)</b></div>
-                    
-                    <ul>
-                        <li type="None">Гуманитарно-техническая академия, "Информационные системы", 2018</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!--content-->
-
-            <div class="content--info">
-                <div class="contante--title">
-                    <h1>По специальности "Информационные системы" опыт работы составляет 3 года.</h1>
-                </div>
-
-                <div class="contante--one">
-                    <div>
-                        <div>Апрель 2019 — Cентябрь 2021</div>
-                        <div>2 года 6 месяцев</div>
-                    </div>
-                    <div>
-                        <div>
-                            <b>Государственное управление по Акмолинской области</b>, Кокшетау
-                        </div>
-
-                        <div>
-                            <b>Оператор компьютерной техники</b>
-                            <p>Настройка и наладка работы ПК/OS а также стандартных и специализированных 
-                                программ в зависимости от необходимости. Работа с AD, доменом (подключение 
-                                и настройка ВТ). Диагностика и устранение неисправностей ВТ и оргтехники. 
-                                Работы по резервному копированию. Работа с серверным оборудованием, работы 
-                                по бесперебойной работе серверного оборудования и ВТ. Монтаж витой пары, в 
-                                основном работа по заявкам.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        <div>Август 2016 — Январь 2017</div>
-                        <div>6 месяцев</div>
-                    </div>
-                    <div>
-                        <div>
-                            <b>Государственное управление по Акмолинской области</b>, Кокшетау
-                        </div>
-
-                        <div>
-                            <b>Инженер по оборудованию (компьютерной техники)</b>
-                            <p>Настройка и ремонт компьютерной техники, периферии. Переустановка и 
-                                профилактика ПК (работа системного администратора).</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="class--skills">
-                <div id="getListSkills"></div>
-            </div>
-
-            <!--/content-->
-
-              <footer class="class--footer">
-                  <div style="width: 60%; text-align: left;"><p>Page create 2021</p></div>
-                  <div style="width: 15%;">
-                      <div><p>Call</p></div>
-                      <div><p>+7 (771) 278-47-97</p></div>
-                  </div>
-                  <div style="width: 15%;">
-                      <div><p>Write</p></div>
-                      <a href="mailto:qwy.r.y@yandex.ru">qwy.r.y@yandex.ru</a>
-                  </div>
-                  <div style="width: 10%;">
-                      <div><p>Fillow</p></div>
-                      <div style="display: inline-flex; margin-left: 10px;">
-                        <img class="link--div" id="link--in" src="templates/image/in.svg" alt="in">
-                        
-                        <img class="link--div" id="link--hh" src="templates/image/hh.svg" alt="in">
-                      </div>
-                  </div>
-              </footer>
-
+            <button class="class--button" style="display: none; width: 150px;" id="tryAgainButton">Try again</button>
         </div>
     </div>
 
-    <!--myJS-->
+    <!--my js file-->
     <script src="templates/js/app.js"></script>
 
 </body>
