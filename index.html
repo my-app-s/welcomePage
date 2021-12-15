@@ -4,53 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume page</title>
+    <!--myStyle-->
     <link rel="stylesheet" href="templates/css/style.css">
-    <title>Welcome!</title>
 </head>
-<body id="body">
+<body>
     
-    <div class="global--loop">
-
+    <div class="class--global--loop">
         <header class="class--header">
-
-            <div class="header--animation" id="header--animation"></div>
-
-            <div class="header--info" id="header--info">
-                <div>
-                    <h1 style="color: white; font-size: 14px;">
-                        Muratbekov Rustem
-                    </h1>
+                <div class="class--header--one">
+                    <h1>Muratbekov Rustem</h1>
                 </div>
+                <div class="class--header--two">
+                    <h4>Junior/Novice programmer-developer (Младший / Начинающий программист-разработчик)</h4>
+                </div>
+        </header>
 
-                <div>
-                    <a class="class--footer--text" href="https://almaty.hh.kz/resume/26b31f66ff0919c1bf0039ed1f6d356f366e4e">
-                        Резюме на HH.kz
-                    </a>
+        <div>
+
+            <div class="class--info">
+                <div class="class--animation" id="div--animation"></div>
+
+                <div class="class--info--text">
+                    <div><b>Высшее образование (Бакалавр)</b></div>
+                    
+                    <ul>
+                        <li type="None">Гуманитарно-техническая академия, "Информационные системы", 2018</li>
+                    </ul>
                 </div>
             </div>
 
-        </header>
+            <!--content-->
 
-        <div class="class--contante" id="class--contante">
-            
-            <h1 style="color: white; font-size: 14px;">
-                div contante(основные данные резюме без контактов 
-                    только общии данные в основном о опыте)
-            </h1>
+            <div class="content--info">
+                <div class="contante--title">
+                    <h1>По специальности "Информационные системы" опыт работы составляет 3 года.</h1>
+                </div>
 
-            <h1 style="color: white; font-size: 14px;">
-                оформление интересное получилось нужно подумать
-            </h1>
+                <div class="contante--one">
+                    <div>
+                        <div>Апрель 2019 — Cентябрь 2021</div>
+                        <div>2 года 6 месяцев</div>
+                    </div>
+                    <div>
+                        <div>
+                            <b>Государственное управление по Акмолинской области</b>, Кокшетау
+                        </div>
+
+                        <div>
+                            <b>Оператор компьютерной техники</b>
+                            <p>Настройка и наладка работы ПК/OS а также стандартных и специализированных 
+                                программ в зависимости от необходимости. Работа с AD, доменом (подключение 
+                                и настройка ВТ). Диагностика и устранение неисправностей ВТ и оргтехники. 
+                                Работы по резервному копированию. Работа с серверным оборудованием, работы 
+                                по бесперебойной работе серверного оборудования и ВТ. Монтаж витой пары, в 
+                                основном работа по заявкам.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div>Август 2016 — Январь 2017</div>
+                        <div>6 месяцев</div>
+                    </div>
+                    <div>
+                        <div>
+                            <b>Государственное управление по Акмолинской области</b>, Кокшетау
+                        </div>
+
+                        <div>
+                            <b>Инженер по оборудованию (компьютерной техники)</b>
+                            <p>Настройка и ремонт компьютерной техники, периферии. Переустановка и 
+                                профилактика ПК (работа системного администратора).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="class--skills">
+                <div id="getListSkills"></div>
+            </div>
+
+            <!--/content-->
+
+              <footer class="class--footer">
+                  <div style="width: 60%; text-align: left;"><p>Page create 2021</p></div>
+                  <div style="width: 15%;">
+                      <div><p>Call</p></div>
+                      <div><p>+7 (771) 278-47-97</p></div>
+                  </div>
+                  <div style="width: 15%;">
+                      <div><p>Write</p></div>
+                      <a href="mailto:qwy.r.y@yandex.ru">qwy.r.y@yandex.ru</a>
+                  </div>
+                  <div style="width: 10%;">
+                      <div><p>Fillow</p></div>
+                      <div style="display: inline-flex; margin-left: 10px;">
+                        <img class="link--div" id="link--in" src="templates/image/in.svg" alt="in">
+                        
+                        <img class="link--div" id="link--hh" src="templates/image/hh.svg" alt="in">
+                      </div>
+                  </div>
+              </footer>
 
         </div>
-
-        <footer class="class--footer">
-            
-        </footer>
-
-        <script src="templates/js/app.js"></script>
-
     </div>
+
+    <!--myJS-->
+    <script src="templates/js/app.js"></script>
 
 </body>
 </html>
