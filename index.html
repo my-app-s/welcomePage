@@ -4,29 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--my css file-->
     <link rel="stylesheet" href="templates/css/style.css">
+    <title>Welcome!</title>
 </head>
-<body>
+<body id="body">
     
-    <div class="class--global">
-        <div class="class--welcome">
-            <h1>Hello, press button "Start" for game!</h1>
-            <button class="class--button" id="startButton">Start</button>
+    <div class="global--loop">
+
+        <header class="class--header">
+
+            <div class="header--animation" id="header--animation"></div>
+
+            <div class="header--info" id="header--info">
+                <div>
+                    <h1 style="color: white; font-size: 14px;">
+                        Muratbekov Rustem
+                    </h1>
+                </div>
+
+                <div>
+                    <a class="class--footer--text" href="https://almaty.hh.kz/resume/26b31f66ff0919c1bf0039ed1f6d356f366e4e">
+                        Резюме на HH.kz
+                    </a>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="class--contante" id="class--contante">
+            
+            <h1 style="color: white; font-size: 14px;">
+                div contante(основные данные резюме без контактов 
+                    только общии данные в основном о опыте)
+            </h1>
+
+            <h1 style="color: white; font-size: 14px;">
+                оформление интересное получилось нужно подумать
+            </h1>
+
         </div>
 
-        <div class="field--game" id="fieldGame"></div>
+        <footer class="class--footer">
+            
+        </footer>
 
-        <div id="messageResult"></div>
+        <script src="templates/js/app.js"></script>
 
-        <div>
-            <button class="class--button" style="display: none; width: 150px;" id="tryAgainButton">Try again</button>
-        </div>
     </div>
-
-    <!--my js file-->
-    <script src="templates/js/app.js"></script>
 
 </body>
 </html>
