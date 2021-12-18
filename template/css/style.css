@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.class--glodal {
+    margin: 0 auto;
+
+    width: 1000px;
+
+    padding: 20px;
+
+    display: flex;
+
+    border: 1px solid black ;
+}
+
+.global--item {
+    margin-left: 5px;
+
+    width: 200px;
+    height: 200px;
+
+    text-align: center;
+    line-height: 200px;
+
+    color: white;
+    background-color: black;
+}
