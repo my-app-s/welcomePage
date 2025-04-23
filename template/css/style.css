@@ -4,6 +4,8 @@ body {
     user-select: none; /* Отключает выделение текста */
     -webkit-user-select: none; /* Для браузеров на основе WebKit */
     -ms-user-select: none; /* Для старых версий Internet Explorer */
+    min-height: 100vh; /* Убедимся, что высота страницы занимает весь экран */
+    margin: 0;
 }
 /* Main */
 .div-main {
@@ -25,7 +27,7 @@ body {
 }
 /* ---------- */
 /* Welcome */
-#div-with-welcome {
+#div-with-portfolio {
     background-color: #e3e2dd;
     animation-name: circle-to-square;
     animation-duration: 5s;
@@ -68,9 +70,48 @@ body {
     text-align: center;
     cursor: pointer;
 }
+/* ---------- */
+/* Background text */
+.div-body-background-text-portfolio {
+    position: absolute; /* Позволяет управлять расположением */
+    padding: 10px;
+    color: #eeede9;
+    top: 121px;
+    left: 406px;
+    width: 10px;
+    height: 17px;
+    font-size: 18px;
+}
+.div-body-background-text {
+    position: absolute; /* Позволяет управлять расположением */
+    padding: 10px;
+    color:#eeede9;
+    top: 122px;
+    left: 487px;
+    width: 10px;
+    height: 17px;
+    z-index: -1; /* Перемещает на задний фон */
+    animation-name: circle-to-square-for-div-body-background-text;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+.div-bottom-background-text {
+    position: absolute; /* Позволяет управлять расположением */
+    top: 864px;
+    left: 492px;
+    width: 10px;
+    height: 10px;
+    background-color: #080bdf;
+    z-index: -1; /* Перемещает на задний фон */
+}
+/* ---------- */
 /* Body div left and right */
 .div-body {
     display: flex;
+    position: relative;
 }
 
 .div-body-left {
@@ -79,7 +120,7 @@ body {
     padding: 10px;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    height: 700px;
+    height: 710px;
     text-align: right;
 }
 
@@ -88,21 +129,25 @@ body {
     background-color: lightblue;
     padding: 10px;
     border-bottom: 1px solid #ccc;
-    height: 700px;
+    height: 710px;
 }
 /* ---------- */
 /* Bottom div */
 .div-bottom {
     display: flex;
     gap: 10px;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .div-bottom-item {
     flex: 1;
-    background-color: lightblue;
     padding: 10px;
     border: 1px solid #ccc;
-    text-align: center;
+    text-align: justify;
+    height: 50px;
 }
 /* ---------- */
 /* Animation */
@@ -117,6 +162,21 @@ body {
     }
     to {
         height: 150px;
+        background-color: #2E9AFF;
+    }
+}
+
+@keyframes circle-to-square-for-div-body-background-text {
+    from {
+        width: 10;
+        background-color: #F498AD;
+    }
+    50% {
+        width: 528px;
+        background-color: #7F6EDB;
+    }
+    to {
+        width: 528px;
         background-color: #2E9AFF;
     }
 }
