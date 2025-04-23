@@ -1,34 +1,99 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-family: Aileron, Arial, Helvetica, sans-serif;
+    background-color: #eeede9;
+    user-select: none; /* Отключает выделение текста */
+    -webkit-user-select: none; /* Для браузеров на основе WebKit */
+    -ms-user-select: none; /* Для старых версий Internet Explorer */
 }
 
-.class--glodal {
-    margin: 0 auto;
+.div-main {
+    margin: auto;
+    width: 720px;
+}
 
-    width: 1000px;
-
-    padding: 20px;
-
+.div-top {
     display: flex;
-
-    border: 1px solid black ;
+    gap: 10px;
 }
 
-.global--item {
-    margin-left: 5px;
-
-    width: 200px;
-    height: 200px;
-
+.div-top-item {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
     text-align: center;
-    line-height: 200px;
+}
 
-    color: white;
-    background-color: black;
+/* Welcome */
+#div-with-welcome {
+    background-color: #e3e2dd;
+}
+
+/* GitHub */
+#div-with-github {
+    background-color: #282827;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+
+.link-github {
+    color: black; /* Color before for link */
+}
+
+.link-github:hover {
+    color: black; /* Color after for link */
+}
+
+/* Linkedin */
+#div-with-linkedin {
+    background-color: #a5a4a0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* HH */
+#div-with-hh {
+    background-color: #eeede9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+
+.div-body {
+    display: flex;
+}
+
+.div-body-left {
+    flex: 1;
+    background-color: lightblue;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    height: 700px;
+    text-align: right;
+}
+
+.div-body-right {
+    flex: 1;
+    background-color: lightblue;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    height: 700px;
+}
+
+.div-bottom {
+    display: flex;
+    gap: 10px;
+}
+
+.div-bottom-item {
+    flex: 1;
+    background-color: lightblue;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
 }
