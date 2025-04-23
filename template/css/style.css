@@ -5,10 +5,10 @@ body {
     -webkit-user-select: none; /* Для браузеров на основе WebKit */
     -ms-user-select: none; /* Для старых версий Internet Explorer */
 }
-
+/* Main */
 .div-main {
     margin: auto;
-    width: 720px;
+    width: 720px; /* Max width for main div */
 }
 
 .div-top {
@@ -17,17 +17,23 @@ body {
 }
 
 .div-top-item {
+    height: 100px;
     flex: 1;
     padding: 10px;
     border: 1px solid #ccc;
     text-align: center;
 }
-
+/* ---------- */
 /* Welcome */
 #div-with-welcome {
     background-color: #e3e2dd;
+    animation-name: circle-to-square;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
 }
-
+/* ---------- */
 /* GitHub */
 #div-with-github {
     background-color: #282827;
@@ -38,13 +44,13 @@ body {
 }
 
 .link-github {
-    color: black; /* Color before for link */
+    color: rgb(227 226 221); /* Color before for link */
 }
 
 .link-github:hover {
-    color: black; /* Color after for link */
+    color: rgb(227 226 221); /* Color after for link */
 }
-
+/* ---------- */
 /* Linkedin */
 #div-with-linkedin {
     background-color: #a5a4a0;
@@ -53,7 +59,7 @@ body {
     text-align: center;
     cursor: pointer;
 }
-
+/* ---------- */
 /* HH */
 #div-with-hh {
     background-color: #eeede9;
@@ -62,7 +68,7 @@ body {
     text-align: center;
     cursor: pointer;
 }
-
+/* Body div left and right */
 .div-body {
     display: flex;
 }
@@ -84,7 +90,8 @@ body {
     border-bottom: 1px solid #ccc;
     height: 700px;
 }
-
+/* ---------- */
+/* Bottom div */
 .div-bottom {
     display: flex;
     gap: 10px;
@@ -97,3 +104,20 @@ body {
     border: 1px solid #ccc;
     text-align: center;
 }
+/* ---------- */
+/* Animation */
+@keyframes circle-to-square {
+    from {
+        height: 45px;
+        background-color: #F498AD;
+    }
+    50% {
+        height: 100px;
+        background-color: #7F6EDB;
+    }
+    to {
+        height: 150px;
+        background-color: #2E9AFF;
+    }
+}
+/* ---------- */
