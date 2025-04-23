@@ -10,7 +10,6 @@ clickableDivGithub.addEventListener("click", () => navigateTo("https://github.co
 clickableDivLinkedin.addEventListener("click", () => navigateTo("https://www.linkedin.com/in/rustem-m-692916334"));
 clickableDivHH.addEventListener("click", () => navigateTo("https://hh.ru/resume/c88917e1ff0e3ec76d0039ed1f695343343372"));
 
-
 document.addEventListener("contextmenu", function (e) {
     e.preventDefault(); // Отключает контекстное меню
 });
