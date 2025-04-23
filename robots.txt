@@ -1,2 +1,17 @@
 User-agent: *
 Disallow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /config/
+Disallow: /*.php$
+Disallow: /*.env$
+Disallow: /*.css$
+Disallow: /*.js$
+Disallow: /*.html$
+Disallow: /*.md$
+Disallow: /*.txt$
+Disallow: /search?
+Disallow: /user/
+Disallow: /tmp/
+Disallow: /cache/
+Crawl-delay: 10
