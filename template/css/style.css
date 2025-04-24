@@ -180,24 +180,6 @@ body {
     height: 710px;
 }
 /* ---------- */
-/* Bottom div */
-.div-bottom {
-    display: flex;
-    gap: 10px;
-    height: 50px;
-    position: fixed;
-    bottom: 0;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.div-bottom-item {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: justify;
-    height: 50px;
-}
-/* ---------- */
 /* Animation */
 @keyframes circle-to-square {
     from {
