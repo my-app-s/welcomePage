@@ -72,7 +72,11 @@ body {
 }
 /* ---------- */
 /* Background text */
-.div-body-background-text-portfolio {
+.div-body-background-text {
+    position: relative;
+}
+
+.div-body-background-text-welcome {
     position: absolute; /* Позволяет управлять расположением */
     padding: 10px;
     color: #eeede9;
@@ -82,7 +86,7 @@ body {
     height: 17px;
     font-size: 18px;
 }
-.div-body-background-text {
+.div-body-background-text-portfolio {
     position: absolute; /* Позволяет управлять расположением */
     padding: 10px;
     color:#eeede9;
@@ -111,7 +115,6 @@ body {
 /* Body div left and right */
 .div-body {
     display: flex;
-    position: relative;
 }
 
 .div-body-left {
