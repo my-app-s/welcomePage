@@ -23,10 +23,10 @@ document.addEventListener("keydown", function (e) {
 document.addEventListener("dragstart", function (e) {
     e.preventDefault(); // Отключает перетаскивание
 });
-/*
-document.addEventListener("keydown", function (e) {
-    if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
-        e.preventDefault();
-        alert("Открытие панели разработчика запрещено.");
-    }
-});*/
+
+// document.addEventListener("keydown", function (e) {
+//     if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+//         e.preventDefault();
+//         alert("Открытие панели разработчика запрещено.");
+//     }
+// });
