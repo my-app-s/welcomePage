@@ -31,7 +31,7 @@ body {
 #div-with-portfolio {
     background-color: #e3e2dd;
     animation-name: circle-to-square;
-    animation-duration: 5s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in;
@@ -113,20 +113,12 @@ body {
 .div-main-bottom-background-text-left {
     position: absolute; /* Позволяет управлять расположением */
     top: 868px;
-    left: 0px;
-    width: 173px;
-    height: 16px;
-    z-index: -1; /* Перемещает на задний фон */
-    color: #eeede9;
-}
-
-.div-main-bottom-background-text-left-child-container-one {
-    text-align: center;
-    align-items: center;
-    font-size: 11px;
     width: 126px;
     height: 16px;
+    font-size: 11px;
+    text-align: center;
     background-color: #282827;
+    color: #eeede9;
     z-index: -1; /* Перемещает на задний фон */
 }
 
@@ -232,17 +224,42 @@ body {
 
 .div-body {
     position: absolute;
-    top: 975px;
+    top: 1200px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 720px; /* Max width for main div */
     background-color: #eeede9;
 }
 
-.div-projects {
+.div-body-projects {
     text-align: center;
 }
-.div-notes {
+
+.div-body-projects-ul {
+    background-color: #eeede9; /* Нежный фон */
+    border-left: 4px solid #007BFF; /* Цветная линия сбоку */
+    padding: 15px; /* Внутренние отступы */
+    margin: 20px 0; /* Отступы от других элементов */
+    font-family: 'Arial', sans-serif; /* Аккуратный шрифт */
+    font-size: 16px; /* Размер шрифта */
+    color: #333; /* Цвет текста */
+    line-height: 1.6; /* Увеличенный интерлиньяж для читаемости */
+}
+
+.div-body-projects-ul p {
+    margin: 0; /* Убираем стандартные отступы у параграфа */
+}
+
+.div-body-projects-ul p strong {
+    color: #007BFF; /* Цвет выделенных слов */
+}
+
+.div-body-projects-ul p em {
+    color: #555; /* Цвет для текста курсивом */
+    font-style: italic;
+}
+
+.div-body-notes {
     text-align: center;
     background-color: #e3e2dd;
 }
