@@ -8,18 +8,18 @@ body {
     margin: 0;
 }
 /* Main */
-.div-main {
+.div-main-top {
     position: relative;
     margin: 0 auto;
     width: 720px; /* Max width for main div */
 }
 
-.div-top {
+.div-main-top-top {
     display: flex;
     gap: 10px;
 }
 
-.div-top-item {
+.div-main-top-top-item {
     height: 100px;
     flex: 1;
     padding: 10px;
@@ -74,7 +74,7 @@ body {
 }
 /* ---------- */
 /* Background text */
-.div-body-background-text-welcome {
+.div-main-body-background-text-welcome {
     position: absolute; /* Позволяет управлять расположением */
     padding: 10px;
     color: #eeede9;
@@ -85,7 +85,7 @@ body {
     font-size: 18px;
     z-index: -1; /* Перемещает на задний фон */
 }
-.div-body-background-text-portfolio {
+.div-main-body-background-text-portfolio {
     position: absolute; /* Позволяет управлять расположением */
     padding: 10px;
     border-top-right-radius: 15px; /* Верхний правый угол */
@@ -103,14 +103,14 @@ body {
     animation-timing-function: ease-in;
 }
 
-.div-body-background-text-it-specialist {
+.div-main-body-background-text-it-specialist {
     position: absolute; /* Позволяет управлять расположением */
     top: 82px;
     left: 46px;
     z-index: -2; /* Перемещает на задний фон за .div-body-background-text-welcome*/
 }
 
-.div-bottom-background-text-left {
+.div-main-bottom-background-text-left {
     position: absolute; /* Позволяет управлять расположением */
     top: 868px;
     left: 0px;
@@ -120,16 +120,17 @@ body {
     color: #eeede9;
 }
 
-.div-bottom-background-text-left-child-container-one {
-    padding-left: 5px;
-    padding-right: 5px;
+.div-main-bottom-background-text-left-child-container-one {
+    text-align: center;
+    align-items: center;
+    font-size: 11px;
     width: 126px;
     height: 16px;
     background-color: #282827;
     z-index: -1; /* Перемещает на задний фон */
 }
 
-.div-bottom-background-text-right {
+.div-main-bottom-background-text-right {
     position: absolute; /* Позволяет управлять расположением */
     top: 868px;
     left: 151px;
@@ -146,7 +147,7 @@ body {
     animation-timing-function: ease-in;
 }
 
-.div-bottom-background-text-right-text {
+.div-main-bottom-background-text-right-text {
     position: absolute; /* Позволяет управлять расположением */
     top: 868px;
     left: 361px;
@@ -158,14 +159,14 @@ body {
 }
 /* ---------- */
 /* Body div left and right */
-.div-body {
+.div-main-body {
     display: flex;
     height: 1000px; /* For normal view bottom */
 }
 
-.div-body-left {
+.div-main-body-left {
     flex: 1;
-    background-color: lightblue;
+    background-color: #e3e2dd;
     padding: 10px;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
@@ -173,9 +174,9 @@ body {
     text-align: right;
 }
 
-.div-body-right {
+.div-main-body-right {
     flex: 1;
-    background-color: lightblue;
+    background-color: #eeede9;
     padding: 10px;
     border-bottom: 1px solid #ccc;
     height: 710px;
@@ -229,10 +230,20 @@ body {
 /* ---------- */
 /* Div projects */
 
-.div-projects {
-    margin: 0 auto;
-    margin-top: 5%;
+.div-body {
+    position: absolute;
+    top: 975px;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 720px; /* Max width for main div */
+    background-color: #eeede9;
 }
 
+.div-projects {
+    text-align: center;
+}
+.div-notes {
+    text-align: center;
+    background-color: #e3e2dd;
+}
 /* ---------- */
