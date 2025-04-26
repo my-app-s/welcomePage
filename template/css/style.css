@@ -97,7 +97,7 @@ body {
     height: 17px;
     z-index: -1; /* Перемещает на задний фон */
     animation-name: circle-to-square-for-div-body-background-text;
-    animation-duration: 10s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in;
