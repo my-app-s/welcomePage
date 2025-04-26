@@ -224,7 +224,7 @@ body {
 
 .div-body {
     position: absolute;
-    top: 1280px;
+    top: 1400px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 720px; /* Max width for main div */
