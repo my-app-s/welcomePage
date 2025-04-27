@@ -244,6 +244,20 @@ body {
     font-size: 16px; /* Размер шрифта */
     color: #333; /* Цвет текста */
     line-height: 1.6; /* Увеличенный интерлиньяж для читаемости */
+    animation: randome-border-color 5s infinite;
+    list-style-type: none; /* Disable list numder style */
+}
+
+@keyframes randome-border-color {
+    0% {
+        border-left-color: #F498AD; /* Синий цвет */
+    }
+    50% {
+        border-left-color: #2E9AFF; /* Оранжевый цвет */
+    }
+    100% {
+        border-left-color: #7F6EDB; /* Зеленый цвет */
+    }
 }
 
 .div-body-projects-ul p {
