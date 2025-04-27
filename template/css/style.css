@@ -224,7 +224,7 @@ body {
 
 .div-body {
     position: absolute;
-    top: 1220px;
+    top: 1400px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 720px; /* Max width for main div */
@@ -273,8 +273,16 @@ body {
     font-style: italic;
 }
 
-.div-body-notes {
+.div-body-setrificate {
     text-align: center;
     background-color: #e3e2dd;
+}
+
+.div-body-setrificate-container{
+    display: flex;
+}
+
+.div-body-setrificate-container-item {
+    flex: 1;
 }
 /* ---------- */
