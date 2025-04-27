@@ -31,10 +31,10 @@ body {
 #div-with-portfolio {
     background-color: #e3e2dd;
     animation-name: circle-to-square;
-    animation-duration: 10s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-timing-function: ease-in;
+    animation-timing-function: linear;
     z-index: -1; /* Перемещает на задний фон */
 }
 /* ---------- */
