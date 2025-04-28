@@ -5,6 +5,15 @@ function navigateTo(url) {
 const clickableDivGithub = document.getElementById("div-with-github");
 const clickableDivLinkedin = document.getElementById("div-with-linkedin");
 const clickableDivHH = document.getElementById("div-with-hh");
+const clickableSetr1 = document.getElementById("div-body-setrificate-container-item-1");
+const clickableSetr2 = document.getElementById("div-body-setrificate-container-item-2");
+const clickableSetr3 = document.getElementById("div-body-setrificate-container-item-3");
+const clickableSetr4 = document.getElementById("div-body-setrificate-container-item-4");
+const clickableSetr5 = document.getElementById("div-body-setrificate-container-item-5");
+const clickableSetr6 = document.getElementById("div-body-setrificate-container-item-6");
+const clickableSetr7 = document.getElementById("div-body-setrificate-container-item-7");
+const clickableSetr8 = document.getElementById("div-body-setrificate-container-item-8");
+const clickableSetr9 = document.getElementById("div-body-setrificate-container-item-9");
 
 function handleNavigation(event, url) {
     if (event.button === 0) { // Левая кнопка мыши
@@ -17,6 +26,15 @@ function handleNavigation(event, url) {
 clickableDivGithub.addEventListener("mousedown", (event) => handleNavigation(event, "https://github.com/my-app-s"));
 clickableDivLinkedin.addEventListener("mousedown", (event) => handleNavigation(event, "https://www.linkedin.com/in/rustem-m-692916334"));
 clickableDivHH.addEventListener("mousedown", (event) => handleNavigation(event, "https://hh.ru/resume/c88917e1ff0e3ec76d0039ed1f695343343372"));
+clickableSetr1.addEventListener("mousedown", (event) => handleNavigation(event, "https://stepik.org/cert/1028496?lang=en"));
+clickableSetr2.addEventListener("mousedown", (event) => handleNavigation(event, "https://www.sololearn.com/en/certificates/CT-NDOUR87X"));
+clickableSetr3.addEventListener("mousedown", (event) => handleNavigation(event, "https://www.sololearn.com/en/certificates/CT-BQ6T9O18"));
+clickableSetr4.addEventListener("mousedown", (event) => handleNavigation(event, "https://www.sololearn.com/en/certificates/CT-KIWHL5L7"));
+clickableSetr5.addEventListener("mousedown", (event) => handleNavigation(event, "https://www.sololearn.com/en/certificates/CT-ETRVSDXT"));
+clickableSetr6.addEventListener("mousedown", (event) => handleNavigation(event, "https://www.sololearn.com/en/certificates/CT-PNPTUELV"));
+clickableSetr7.addEventListener("mousedown", (event) => handleNavigation(event, "https://www.sololearn.com/en/certificates/CT-K5PCIELQ"));
+clickableSetr8.addEventListener("mousedown", (event) => handleNavigation(event, "https://stepik.org/cert/2532641?lang=en"));
+clickableSetr9.addEventListener("mousedown", (event) => handleNavigation(event, "https://stepik.org/cert/2827910?lang=en"));
 
 document.addEventListener("contextmenu", function (e) {
     e.preventDefault(); // Отключает контекстное меню
