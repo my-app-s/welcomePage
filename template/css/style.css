@@ -1,13 +1,14 @@
 body {
     font-family: Aileron, Arial, Helvetica, sans-serif;
     background-color: #eeede9;
-    user-select: none; /* Отключает выделение текста */
-    -webkit-user-select: none; /* Для браузеров на основе WebKit */
-    -ms-user-select: none; /* Для старых версий Internet Explorer */
+    /* user-select: none; /* Отключает выделение текста */
+    /* -webkit-user-select: none; /* Для браузеров на основе WebKit */
+    /* -ms-user-select: none; /* Для старых версий Internet Explorer */
     /* min-height: 100vh; /* Убедимся, что высота страницы занимает весь экран */
     margin: 0;
 }
-/* Main */
+
+/* Style for div main */
 .div-main-top {
     position: relative;
     margin: 0 auto;
@@ -31,11 +32,26 @@ body {
 #div-with-portfolio {
     background-color: #e3e2dd;
     animation-name: circle-to-square;
-    animation-duration: 8s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
     z-index: -1; /* Перемещает на задний фон */
+}
+
+@keyframes circle-to-square {
+    from {
+        height: 45px;
+        background-color: #F498AD;
+    }
+    50% {
+        height: 100px;
+        background-color: #7F6EDB;
+    }
+    to {
+        height: 160px;
+        background-color: #2E9AFF;
+    }
 }
 /* ---------- */
 /* GitHub */
@@ -103,6 +119,21 @@ body {
     animation-timing-function: ease-in;
 }
 
+@keyframes circle-to-square-for-div-body-background-text {
+    from {
+        width: 10px;
+        background-color: #F498AD;
+    }
+    80% {
+        width: 527px;
+        background-color: #2E9AFF;
+    }
+    to {
+        width: 527px;
+        background-color: #7F6EDB;
+    }
+}
+
 .div-main-body-background-text-it-specialist {
     position: absolute; /* Позволяет управлять расположением */
     top: 82px;
@@ -139,6 +170,21 @@ body {
     animation-timing-function: ease-in;
 }
 
+@keyframes circle-to-square-for-div-bottom-background-text-right {
+    from {
+        width: 10px;
+        background-color: #F498AD;
+    }
+    80% {
+        width: 557px;
+        background-color: #2E9AFF;
+    }
+    to {
+        width: 557px;
+        background-color: #7F6EDB;
+    }
+}
+
 .div-main-bottom-background-text-right-text {
     position: absolute; /* Позволяет управлять расположением */
     top: 868px;
@@ -172,52 +218,6 @@ body {
     padding: 10px;
     border-bottom: 1px solid #ccc;
     height: 710px;
-}
-/* ---------- */
-/* Animation */
-@keyframes circle-to-square {
-    from {
-        height: 45px;
-        background-color: #F498AD;
-    }
-    50% {
-        height: 100px;
-        background-color: #7F6EDB;
-    }
-    to {
-        height: 160px;
-        background-color: #2E9AFF;
-    }
-}
-
-@keyframes circle-to-square-for-div-body-background-text {
-    from {
-        width: 10px;
-        background-color: #F498AD;
-    }
-    80% {
-        width: 527px;
-        background-color: #2E9AFF;
-    }
-    to {
-        width: 527px;
-        background-color: #7F6EDB;
-    }
-}
-
-@keyframes circle-to-square-for-div-bottom-background-text-right {
-    from {
-        width: 10px;
-        background-color: #F498AD;
-    }
-    80% {
-        width: 557px;
-        background-color: #2E9AFF;
-    }
-    to {
-        width: 557px;
-        background-color: #7F6EDB;
-    }
 }
 /* ---------- */
 /* Div projects */
@@ -271,6 +271,11 @@ body {
 .div-body-projects-ul p em {
     color: #555; /* Цвет для текста курсивом */
     font-style: italic;
+}
+
+.div-body-projects-ul img {
+    width: 700px;
+    height: 400px;
 }
 /* ---------- */
 /* Div setrificate */

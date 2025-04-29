@@ -2,6 +2,14 @@ function navigateTo(url) {
     window.location.href = url;
 }
 
+function handleNavigation(event, url) {
+    if (event.button === 0) { // Левая кнопка мыши
+        navigateTo(url);
+    } else if (event.button === 1) { // Средняя кнопка мыши
+        window.open(url, "_blank"); // Открывает в новой вкладке
+    }
+}
+
 const clickableDivGithub = document.getElementById("div-with-github");
 const clickableDivLinkedin = document.getElementById("div-with-linkedin");
 const clickableDivHH = document.getElementById("div-with-hh");
@@ -14,14 +22,6 @@ const clickableSetr6 = document.getElementById("div-body-setrificate-container-i
 const clickableSetr7 = document.getElementById("div-body-setrificate-container-item-7");
 const clickableSetr8 = document.getElementById("div-body-setrificate-container-item-8");
 const clickableSetr9 = document.getElementById("div-body-setrificate-container-item-9");
-
-function handleNavigation(event, url) {
-    if (event.button === 0) { // Левая кнопка мыши
-        navigateTo(url);
-    } else if (event.button === 1) { // Средняя кнопка мыши
-        window.open(url, "_blank"); // Открывает в новой вкладке
-    }
-}
 
 clickableDivGithub.addEventListener("mousedown", (event) => handleNavigation(event, "https://github.com/my-app-s"));
 clickableDivLinkedin.addEventListener("mousedown", (event) => handleNavigation(event, "https://www.linkedin.com/in/rustem-m-692916334"));
@@ -36,23 +36,23 @@ clickableSetr7.addEventListener("mousedown", (event) => handleNavigation(event, 
 clickableSetr8.addEventListener("mousedown", (event) => handleNavigation(event, "https://stepik.org/cert/2532641?lang=en"));
 clickableSetr9.addEventListener("mousedown", (event) => handleNavigation(event, "https://stepik.org/cert/2827910?lang=en"));
 
-document.addEventListener("contextmenu", function (e) {
-    e.preventDefault(); // Отключает контекстное меню
-});
+// document.addEventListener("contextmenu", function (e) {
+//     e.preventDefault(); // Отключает контекстное меню
+// });
 
-document.addEventListener("keydown", function (e) {
-    if (e.ctrlKey && (e.key === "c" || e.key === "u" || e.key === "s")) {
-        e.preventDefault(); // Отключает сочетания Ctrl+C, Ctrl+U, Ctrl+S
-    }
-});
+// document.addEventListener("keydown", function (e) {
+//     if (e.ctrlKey && (e.key === "c" || e.key === "u" || e.key === "s")) {
+//         e.preventDefault(); // Отключает сочетания Ctrl+C, Ctrl+U, Ctrl+S
+//     }
+// });
 
-document.addEventListener("dragstart", function (e) {
-    e.preventDefault(); // Отключает перетаскивание
-});
+// document.addEventListener("dragstart", function (e) {
+//     e.preventDefault(); // Отключает перетаскивание
+// });
 
-document.addEventListener("keydown", function (e) {
-    if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
-        e.preventDefault();
-        alert("Открытие панели разработчика запрещено.");
-    }
-});
+// document.addEventListener("keydown", function (e) {
+//     if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+//         e.preventDefault();
+//         alert("Открытие панели разработчика запрещено.");
+//     }
+// });
