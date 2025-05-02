@@ -36,23 +36,23 @@ clickableSetr7.addEventListener("mousedown", (event) => handleNavigation(event, 
 clickableSetr8.addEventListener("mousedown", (event) => handleNavigation(event, "https://stepik.org/cert/2532641?lang=en"));
 clickableSetr9.addEventListener("mousedown", (event) => handleNavigation(event, "https://stepik.org/cert/2827910?lang=en"));
 
-// document.addEventListener("contextmenu", function (e) {
-//     e.preventDefault(); // Отключает контекстное меню
-// });
+document.addEventListener("contextmenu", function (e) {
+    e.preventDefault(); // Отключает контекстное меню
+});
 
-// document.addEventListener("keydown", function (e) {
-//     if (e.ctrlKey && (e.key === "c" || e.key === "u" || e.key === "s")) {
-//         e.preventDefault(); // Отключает сочетания Ctrl+C, Ctrl+U, Ctrl+S
-//     }
-// });
+document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey && (e.key === "c" || e.key === "u" || e.key === "s")) {
+        e.preventDefault(); // Отключает сочетания Ctrl+C, Ctrl+U, Ctrl+S
+    }
+});
 
-// document.addEventListener("dragstart", function (e) {
-//     e.preventDefault(); // Отключает перетаскивание
-// });
+document.addEventListener("dragstart", function (e) {
+    e.preventDefault(); // Отключает перетаскивание
+});
 
-// document.addEventListener("keydown", function (e) {
-//     if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
-//         e.preventDefault();
-//         alert("Открытие панели разработчика запрещено.");
-//     }
-// });
+document.addEventListener("keydown", function (e) {
+    if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+        e.preventDefault();
+        alert("Открытие панели разработчика запрещено.");
+    }
+});
