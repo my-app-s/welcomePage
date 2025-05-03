@@ -8,21 +8,28 @@ body {
     /* min-height: 100vh; /* Убедимся, что высота страницы занимает весь экран */
 }
 
-.div-main {
+.section-main {
     margin: 0 auto;
-    width: 800px;
+    width: 1260px;
     height: 1000px;
     background-color: #202020;
-}
-
-.div-main-body {
     position: relative;
 }
 
-.div-main-body-right-line {
+.section-main-section-line {
+    
+}
+
+.section-main-section-line-right {
     position: absolute;
-    left: 780px;
-    width: 20px;
+    top: 0px;
+    left: 1250px;
+    width: 10px;
     height: 1000px;
     background-color: #66CD00;
+}
+
+.footer-div-bottom {
+    text-align: center;
+    color: white;
 }
