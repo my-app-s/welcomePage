@@ -16,11 +16,7 @@ body {
     position: relative;
 }
 
-.section-main-section-line {
-    
-}
-
-.section-main-section-line-right {
+.div-right-line {
     position: absolute;
     top: 0px;
     left: 1250px;
