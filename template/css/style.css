@@ -1,31 +1,56 @@
+/* body */
 body {
     margin: 0 auto;
     font-family: Aileron, Arial, Helvetica, sans-serif;
+    color: white;
     background-color: #322D2D;
     /* user-select: none; /* Отключает выделение текста */
     /* -webkit-user-select: none; /* Для браузеров на основе WebKit */
     /* -ms-user-select: none; /* Для старых версий Internet Explorer */
     /* min-height: 100vh; /* Убедимся, что высота страницы занимает весь экран */
 }
-
+/* ---------- */
+/* section-main */
+/* ---------- */
 .section-main {
     margin: 0 auto;
     width: 1260px;
-    height: 1000px;
+    height: 100vh;
     background-color: #202020;
     position: relative;
 }
-
+.section-main-header-flex {
+    display: flex;
+}
+.section-main-header-flex-welcome {
+    margin: 5px 10px 10px 40px;
+    flex: 0 0 700px;
+    color: #66CD00;
+    font-size: 96px;
+    width: 697px;
+    text-align: center;
+}
+.section-main-header-flex-image-link {
+    flex: 1;
+    width: 437px;
+}
+.section-main-header-text {
+}
+/* ---------- */
 .div-right-line {
     position: absolute;
     top: 0px;
     left: 1250px;
     width: 10px;
-    height: 1000px;
+    height: 100%;
     background-color: #66CD00;
 }
-
+.footer {
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 .footer-div-bottom {
     text-align: center;
-    color: white;
 }
