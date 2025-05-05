@@ -14,11 +14,15 @@ body {
 /* ---------- */
 .section-main {
     margin: 0 auto;
+    padding: 10px;
     width: 1260px;
     height: 100vh;
     background-color: #202020;
     position: relative;
 }
+/* ---------- */
+/* main-header-flex */
+/* ---------- */
 .section-main-header-flex {
     display: flex;
 }
@@ -32,15 +36,61 @@ body {
 }
 .section-main-header-flex-image-link {
     flex: 1;
-    width: 437px;
+    padding: 20px;
 }
-.section-main-header-text {
+.hh {
+    width: 203px;
+    height: 92px;
 }
+.ln {
+    margin-left: 10px;
+    width: 203px;
+    height: 92px;
+}
+/* ---------- */
+/* main-div-flex */
+/* ---------- */
+.section-main-div-flex {
+    display: flex;
+}
+#section-main-div-flex-left-image {
+    flex: 1;
+    cursor: pointer;
+    width: 462px;
+    height: 420px;
+}
+.section-main-div-flex-left-link {
+    position: absolute;
+    left: 210px;
+    top: 325px;
+    color: #66CD00;
+}
+.section-main-div-flex-right {
+    flex: 1;
+}
+.section-main-div-flex-right h5 {
+    color: #66CD00;
+}
+.section-main-div-flex-right li {
+    color: #FFAE00;
+}
+/* ---------- */
+.footer-section-skills-flex {
+    display: flex;
+}
+.footer-section-skills-flex-left {
+    flex: 1;
+}
+.footer-section-skills-flex-right {
+    flex: 1;
+}
+/* ---------- */
+/* div-right-line */
 /* ---------- */
 .div-right-line {
     position: absolute;
     top: 0px;
-    left: 1250px;
+    left: 1270px;
     width: 10px;
     height: 100%;
     background-color: #66CD00;
@@ -54,3 +104,4 @@ body {
 .footer-div-bottom {
     text-align: center;
 }
+/* ---------- */
