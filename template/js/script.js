@@ -11,7 +11,12 @@ function handleNavigation(event, url) {
 }
 
 const clickableDivWithImage = document.getElementById("section-main-div-flex-left-image");
+const clickableHH = document.getElementById("hh");
+const clickableLN = document.getElementById("ln");
+
 clickableDivWithImage.addEventListener("mousedown", (event) => handleNavigation(event, "https://github.com/my-app-s"));
+clickableHH.addEventListener("mousedown", (event) => handleNavigation(event, "https://hh.ru/resume/c88917e1ff0e3ec76d0039ed1f695343343372"));
+clickableLN.addEventListener("mousedown", (event) => handleNavigation(event, "https://www.linkedin.com/in/rustem-m-692916334"));
 
 // document.addEventListener("contextmenu", function (e) {
 //     e.preventDefault(); // Отключает контекстное меню
