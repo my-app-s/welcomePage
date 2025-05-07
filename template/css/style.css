@@ -1,7 +1,7 @@
 /* body */
 body {
     margin: 0 auto;
-    font-family: Aileron, Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     color: white;
     background-color: #322D2D;
     /* user-select: none; /* Отключает выделение текста */
@@ -69,21 +69,41 @@ body {
 }
 .section-main-div-flex-right {
     flex: 1;
+    margin-left: 150px;
+}
+.section-main-div-flex-right h1 {
+    margin-bottom: 0;
 }
 .section-main-div-flex-right h5 {
+    margin: 0;
     color: #66CD00;
 }
 .section-main-div-flex-right li {
     color: #FFAE00;
 }
 /* ---------- */
-.footer-section-skills-flex {
+/* section-skills */
+/* ---------- */
+.section-skills h1 {
+    color: #66CD00;
+}
+.section-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-skills-container-item {
+    margin: 1px;
+}
+/* ---------- */
+/* section-projects */
+/* ---------- */
+.section-projects h1 {
+    color: #66CD00;
+}
+.section-projects-flex {
     display: flex;
 }
-.footer-section-skills-flex-left {
-    flex: 1;
-}
-.footer-section-skills-flex-right {
+.section-projects-flex-item {
     flex: 1;
 }
 /* ---------- */
