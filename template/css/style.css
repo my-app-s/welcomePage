@@ -8,6 +8,12 @@ body {
     /* -webkit-user-select: none; /* Для браузеров на основе WebKit */
     /* -ms-user-select: none; /* Для старых версий Internet Explorer */
     /* min-height: 100vh; /* Убедимся, что высота страницы занимает весь экран */
+    cursor: url('../image/00000010\ Cursor\ default\ export\ plain\ 96\ DPI\ 32x32.svg'), auto;
+}
+/* ---------- */
+/* cursor-for-link */
+.cursor-for-link {
+    cursor: url('../image/00000010\ Cursor\ for\ link\ export\ plain\ 96\ DPI\ 32x32.svg'), auto;
 }
 /* ---------- */
 /* section-main */
@@ -41,13 +47,11 @@ body {
 #hh {
     width: 203px;
     height: 92px;
-    cursor: pointer;
 }
 #ln {
     margin-left: 10px;
     width: 203px;
     height: 92px;
-    cursor: pointer;
 }
 /* ---------- */
 /* main-div-flex */
@@ -57,7 +61,6 @@ body {
 }
 #section-main-div-flex-left-image {
     flex: 1;
-    cursor: pointer;
     width: 462px;
     height: 420px;
 }
