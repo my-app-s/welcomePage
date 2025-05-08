@@ -18,23 +18,23 @@ clickableDivWithImage.addEventListener("mousedown", (event) => handleNavigation(
 clickableHH.addEventListener("mousedown", (event) => handleNavigation(event, "https://hh.ru/resume/c88917e1ff0e3ec76d0039ed1f695343343372"));
 clickableLN.addEventListener("mousedown", (event) => handleNavigation(event, "https://www.linkedin.com/in/rustem-m-692916334"));
 
-// document.addEventListener("contextmenu", function (e) {
-//     e.preventDefault(); // Отключает контекстное меню
-// });
+document.addEventListener("contextmenu", function (e) {
+    e.preventDefault(); // Отключает контекстное меню
+});
 
-// document.addEventListener("keydown", function (e) {
-//     if (e.ctrlKey && (e.key === "c" || e.key === "u" || e.key === "s")) {
-//         e.preventDefault(); // Отключает сочетания Ctrl+C, Ctrl+U, Ctrl+S
-//     }
-// });
+document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey && (e.key === "c" || e.key === "u" || e.key === "s")) {
+        e.preventDefault(); // Отключает сочетания Ctrl+C, Ctrl+U, Ctrl+S
+    }
+});
 
-// document.addEventListener("dragstart", function (e) {
-//     e.preventDefault(); // Отключает перетаскивание
-// });
+document.addEventListener("dragstart", function (e) {
+    e.preventDefault(); // Отключает перетаскивание
+});
 
-// document.addEventListener("keydown", function (e) {
-//     if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
-//         e.preventDefault();
-//         alert("Открытие панели разработчика запрещено.");
-//     }
-// });
+document.addEventListener("keydown", function (e) {
+    if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+        e.preventDefault();
+        alert("Открытие панели разработчика запрещено.");
+    }
+});
