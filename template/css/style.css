@@ -54,6 +54,12 @@ body {
     height: 92px;
 }
 /* ---------- */
+/* section-main-header-text */
+/* ---------- */
+.section-main-header-text img {
+    margin-left: 20px;
+}
+/* ---------- */
 /* main-div-flex */
 /* ---------- */
 .section-main-div-flex {
@@ -100,6 +106,9 @@ body {
 /* ---------- */
 /* section-projects */
 /* ---------- */
+.section-projects {
+    margin-left: 20px;
+}
 .section-projects h1 {
     color: #66CD00;
 }
