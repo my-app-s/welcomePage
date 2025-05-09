@@ -114,9 +114,23 @@ body {
 }
 .section-projects-flex {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 1210px;
 }
 .section-projects-flex-item {
+    margin: 10px;
+    padding: 5px;
     flex: 1;
+    flex-basis: 150px;
+    max-width: 150px;
+    color: #202020;
+    background-color: #66CD00;
+    text-align: center;
+}
+.in-work {
+    background-image: url('../image/00000013\ In\ work\ for\ animation\ web\ Final\ main\ 150\ DPI.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 /* ---------- */
 /* div-right-line */
@@ -129,6 +143,9 @@ body {
     height: 100%;
     background-color: #66CD00;
 }
+/* ---------- */
+/* footer */
+/* ---------- */
 .footer {
     padding: 15px;
     position: absolute;
@@ -137,6 +154,6 @@ body {
 }
 .footer-div-bottom {
     text-align: center;
-    font-size: 10px;
+    font-size: 15px;
 }
 /* ---------- */
