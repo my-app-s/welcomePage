@@ -90,6 +90,14 @@ body {
 .section-main-div-flex-right li {
     color: #FFAE00;
 }
+.section-main-div-flex-right-background {
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
 /* ---------- */
 /* section-skills */
 /* ---------- */
