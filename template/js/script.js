@@ -22,6 +22,9 @@ const clickableCetr6 = document.getElementById("div-body-cetrificate-container-i
 const clickableCetr7 = document.getElementById("div-body-cetrificate-container-item-7");
 const clickableCetr8 = document.getElementById("div-body-cetrificate-container-item-8");
 const clickableCetr9 = document.getElementById("div-body-cetrificate-container-item-9");
+const clickableCetr10 = document.getElementById("div-body-cetrificate-container-item-10");
+const clickableCetr11 = document.getElementById("div-body-cetrificate-container-item-11");
+const clickableCetr12 = document.getElementById("div-body-cetrificate-container-item-12");
 
 clickableDivGithub.addEventListener("mousedown", (event) => handleNavigation(event, "https://github.com/my-app-s"));
 clickableDivLinkedin.addEventListener("mousedown", (event) => handleNavigation(event, "https://www.linkedin.com/in/rustem-m-692916334"));
@@ -35,6 +38,9 @@ clickableCetr6.addEventListener("mousedown", (event) => handleNavigation(event, 
 clickableCetr7.addEventListener("mousedown", (event) => handleNavigation(event, "https://www.sololearn.com/en/certificates/CT-K5PCIELQ"));
 clickableCetr8.addEventListener("mousedown", (event) => handleNavigation(event, "https://stepik.org/cert/2532641?lang=en"));
 clickableCetr9.addEventListener("mousedown", (event) => handleNavigation(event, "https://stepik.org/cert/2827910?lang=en"));
+clickableCetr10.addEventListener("mousedown", (event) => handleNavigation(event, "https://stepik.org/cert/2899658?lang=en"));
+clickableCetr11.addEventListener("mousedown", (event) => handleNavigation(event, "https://stepik.org/cert/2981157?lang=en"));
+clickableCetr12.addEventListener("mousedown", (event) => handleNavigation(event, "https://stepik.org/cert/2950603?lang=en"));
 
 document.addEventListener("contextmenu", function (e) {
     e.preventDefault(); // Отключает контекстное меню
