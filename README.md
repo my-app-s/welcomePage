@@ -1,4 +1,4 @@
-# WelcomePage
+# Web Welcome Page
 
 ---
 
